@@ -9,15 +9,18 @@ using Unity.MLAgents.Sensors;
 public class FetchAgent : Agent
 {
     [SerializeField] private Transform targetTransform;
+    [SerializeField] private Material winMaterial;
+    [SerializeField] private Material loseMaterial;
+    [SerializeField] private MeshRenderer FloorMeshRenderer;
 
     public override void OnEpisodeBegin()
     {
-        transform.position = new Vector3(0f, 1.0f, -4.5f);
+        transform.localPosition = new Vector3(-6f, 0.5f, -4.5f);
     }
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(targetTransform.position);
+        sensor.AddObservation(transform.localPosition);
+        sensor.AddObservation(targetTransform.localPosition);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -26,7 +29,7 @@ public class FetchAgent : Agent
         float moveX = -actions.ContinuousActions[1];
 
         float moveSpeed = 2.0f;
-        transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
+        transform.localPosition += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -41,11 +44,13 @@ public class FetchAgent : Agent
         if (other.TryGetComponent<TagTarget>(out TagTarget tagTarget))
         {
             SetReward(1.0f);
+            FloorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
         if (other.TryGetComponent<TagWall>(out TagWall tagWall))
         {
             SetReward(-1.0f);
+            FloorMeshRenderer.material = loseMaterial;
             EndEpisode();
         }
     }

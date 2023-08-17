@@ -272,6 +272,9 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 1000
   targetTransform: {fileID: 1634501318}
+  winMaterial: {fileID: 2100000, guid: ab797cfd3ec11ad47b90206260bb29d6, type: 2}
+  loseMaterial: {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
+  FloorMeshRenderer: {fileID: 1453933685}
 --- !u!114 &603710918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,7 +773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
+  - {fileID: 2100000, guid: 069d1385d12feb64fac01b49b43b098e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -910,7 +913,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
+  - {fileID: 2100000, guid: 069d1385d12feb64fac01b49b43b098e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1050,7 +1053,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
+  - {fileID: 2100000, guid: 069d1385d12feb64fac01b49b43b098e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1465,7 +1468,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
+  - {fileID: 2100000, guid: 069d1385d12feb64fac01b49b43b098e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
