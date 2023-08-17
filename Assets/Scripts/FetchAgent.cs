@@ -1,4 +1,7 @@
-
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -7,10 +10,11 @@ using Random = UnityEngine.Random;
 
 public class FetchAgent : Agent
 {
+    [SerializeField] private Transform arena;
     [SerializeField] private Transform targetTransform;
     [SerializeField] private Material winMaterial;
     [SerializeField] private Material loseMaterial;
-    [SerializeField] private MeshRenderer floorMeshRenderer;
+    [SerializeField] private MeshRenderer FloorMeshRenderer;
 
     public override void OnEpisodeBegin()
     {
@@ -44,13 +48,13 @@ public class FetchAgent : Agent
         if (other.TryGetComponent<TagTarget>(out TagTarget tagTarget))
         {
             SetReward(1.0f);
-            floorMeshRenderer.material = winMaterial;
+            FloorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
         if (other.TryGetComponent<TagWall>(out TagWall tagWall))
         {
             SetReward(-1.0f);
-            floorMeshRenderer.material = loseMaterial;
+            FloorMeshRenderer.material = loseMaterial;
             EndEpisode();
         }
     }

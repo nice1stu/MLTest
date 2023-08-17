@@ -2,22 +2,22 @@
     "Fetch": {
         "checkpoints": [
             {
-                "steps": 5234,
-                "file_path": "results\\Test1\\Fetch\\Fetch-5234.onnx",
-                "reward": 0.3333333333333333,
-                "creation_time": 1692230842.8996263,
+                "steps": 4821,
+                "file_path": "results\\Test1\\Fetch\\Fetch-4821.onnx",
+                "reward": -0.6578947368421053,
+                "creation_time": 1692235223.1508417,
                 "auxillary_file_paths": [
-                    "results\\Test1\\Fetch\\Fetch-5234.pt"
+                    "results\\Test1\\Fetch\\Fetch-4821.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 5234,
+            "steps": 4821,
             "file_path": "results\\Test1\\Fetch.onnx",
-            "reward": 0.3333333333333333,
-            "creation_time": 1692230842.8996263,
+            "reward": -0.6578947368421053,
+            "creation_time": 1692235223.1508417,
             "auxillary_file_paths": [
-                "results\\Test1\\Fetch\\Fetch-5234.pt"
+                "results\\Test1\\Fetch\\Fetch-4821.pt"
             ]
         }
     },
