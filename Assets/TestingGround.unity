@@ -270,7 +270,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 1000
   targetTransform: {fileID: 1634501318}
 --- !u!114 &603710918
 MonoBehaviour:
@@ -770,7 +770,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9857970018a24724c8a92056142eca75, type: 2}
+  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -910,7 +910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9857970018a24724c8a92056142eca75, type: 2}
+  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1050,7 +1050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9857970018a24724c8a92056142eca75, type: 2}
+  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1465,7 +1465,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9857970018a24724c8a92056142eca75, type: 2}
+  - {fileID: 2100000, guid: 565fbda9a48f82947a1e9529441d2d43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

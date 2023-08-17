@@ -25,7 +25,7 @@ public class FetchAgent : Agent
         float moveZ = actions.ContinuousActions[0];
         float moveX = -actions.ContinuousActions[1];
 
-        float moveSpeed = 3.0f;
+        float moveSpeed = 2.0f;
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }
 
