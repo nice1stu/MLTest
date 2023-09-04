@@ -19,7 +19,7 @@ public class FetchAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = new Vector3(-6f, 0.5f, 0f);
-        targetTransform.localPosition = new Vector3(Random.Range(-1.5f, -10.5f), 0.5f, Random.Range(-4.5f, 4.5f));
+        targetTransform.localPosition = new Vector3(Random.Range(-0.5f, -10.5f), 0.5f, Random.Range(-4.5f, 4.5f));
     }
     public override void CollectObservations(VectorSensor sensor)
     {
